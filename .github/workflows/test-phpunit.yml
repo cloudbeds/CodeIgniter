@@ -78,7 +78,7 @@ jobs:
         with:
           php-version: ${{ matrix.php }}
           tools: composer, pecl
-          extensions: imagick, sqlite3, pgsql, mysqli, pdo, pdo_mysql, pdo_pgsql, pdo_sqlite, mbstring
+          extensions: imagick, sqlite3, pgsql, mysqli, pdo, pdo_mysql, pdo_pgsql, pdo_sqlite
           ini-values: ${{ env.PHP_INI_VALUES }}
           coverage: xdebug
 
