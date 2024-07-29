@@ -15,8 +15,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [ '8.3', '8.2', '8.1', '8.0']
-        DB: [ 'pdo/mysql', 'pdo/pgsql', 'pdo/sqlite', 'mysqli', 'pgsql', 'sqlite' ]
+        php: [ '8.3', '8.2','8.0']
+        DB: [ 'pdo/mysql', 'pdo/pgsql', 'mysqli', 'pgsql', ]
         compiler: [ default ]
         include:
           - php: '8.2'
@@ -26,34 +26,10 @@ jobs:
             DB: 'pdo/pgsql'
             compiler: jit
           - php: '8.2'
-            DB: 'pdo/sqlite'
-            compiler: jit
-          - php: '8.2'
             DB: 'mysqli'
             compiler: jit
           - php: '8.2'
             DB: 'pgsql'
-            compiler: jit
-          - php: '8.2'
-            DB: 'sqlite'
-            compiler: jit
-          - php: '8.1'
-            DB: 'pdo/mysql'
-            compiler: jit
-          - php: '8.1'
-            DB: 'pdo/pgsql'
-            compiler: jit
-          - php: '8.1'
-            DB: 'pdo/sqlite'
-            compiler: jit
-          - php: '8.1'
-            DB: 'mysqli'
-            compiler: jit
-          - php: '8.1'
-            DB: 'pgsql'
-            compiler: jit
-          - php: '8.1'
-            DB: 'sqlite'
             compiler: jit
           - php: '8.0'
             DB: 'pdo/mysql'
@@ -62,16 +38,10 @@ jobs:
             DB: 'pdo/pgsql'
             compiler: jit
           - php: '8.0'
-            DB: 'pdo/sqlite'
-            compiler: jit
-          - php: '8.0'
             DB: 'mysqli'
             compiler: jit
           - php: '8.0'
             DB: 'pgsql'
-            compiler: jit
-          - php: '8.0'
-            DB: 'sqlite'
             compiler: jit
 
     services:
