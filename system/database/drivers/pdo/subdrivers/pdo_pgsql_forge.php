@@ -47,6 +47,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class CI_DB_pdo_pgsql_forge extends CI_DB_pdo_forge {
 
+	protected $create_table_if = 'CREATE TABLE IF EXISTS';
+	
 	/**
 	 * DROP TABLE IF statement
 	 *

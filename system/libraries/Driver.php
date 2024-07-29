@@ -52,6 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class CI_Driver_Library {
 
+	public $basic;
+	public $lowpack;
+	public $extend;
+
 	/**
 	 * Array of drivers that are available to use with the driver class
 	 *

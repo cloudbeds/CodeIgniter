@@ -2,6 +2,9 @@
 
 class DB_test extends CI_TestCase {
 
+	public $lib;
+	public $subclass;
+	
 	public function test_db_invalid()
 	{
 		$connection = new Mock_Database_DB(array(
