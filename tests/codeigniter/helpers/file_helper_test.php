@@ -2,6 +2,8 @@
 
 class File_helper_Test extends CI_TestCase {
 
+	public $_test_dir;
+	
 	public function set_up()
 	{
 		$this->helper('file');

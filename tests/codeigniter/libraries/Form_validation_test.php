@@ -2,6 +2,7 @@
 
 class Form_validation_test extends CI_TestCase {
 
+	public $form_validation;
 	public function set_up()
 	{
 		$_SERVER['REQUEST_METHOD'] = 'POST';

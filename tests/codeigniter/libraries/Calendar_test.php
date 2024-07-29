@@ -2,6 +2,8 @@
 
 class Calendar_test extends CI_TestCase {
 
+	public $calendar;
+	
 	public function set_up()
 	{
 		// Required for get_total_days()

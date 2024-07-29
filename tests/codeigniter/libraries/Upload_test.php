@@ -2,6 +2,7 @@
 
 class Upload_test extends CI_TestCase {
 
+	public $upload;
 	public function set_up()
 	{
 		$ci = $this->ci_instance();

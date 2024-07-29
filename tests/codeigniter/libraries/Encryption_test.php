@@ -2,6 +2,9 @@
 
 class Encryption_test extends CI_TestCase {
 
+	public $encryption;
+	public $encrypt;
+	
 	public function set_up()
 	{
 		$this->encryption = new Mock_Libraries_Encryption();

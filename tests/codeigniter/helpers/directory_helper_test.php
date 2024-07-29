@@ -2,6 +2,8 @@
 
 class Directory_helper_test extends CI_TestCase {
 
+	public $_test_dir;
+	
 	public function set_up()
 	{
 		$this->helper('directory');
