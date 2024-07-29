@@ -2,6 +2,8 @@
 
 class Loader_test extends CI_TestCase {
 
+	public $prefix;
+	public $load;
 	private $ci_obj;
 
 	public function set_up()

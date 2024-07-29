@@ -2,6 +2,7 @@
 
 class Mock_Core_URI extends CI_URI {
 
+	public $config;
 	public function __construct()
 	{
 		$test = CI_TestCase::instance();
