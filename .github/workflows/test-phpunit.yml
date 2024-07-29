@@ -4,11 +4,7 @@ on: [push, pull_request]
 
 jobs:
   tests:
-<<<<<<< HEAD
-    runs-on: ubuntu-18.04
-=======
     runs-on: ubuntu-24.04
->>>>>>> 73027f3cf (Merge pull request #1 from cloudbeds/chore/php8.2)
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     env:
       PHP_INI_VALUES: assert.exception=1, zend.assertions=1
@@ -16,13 +12,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-<<<<<<< HEAD
-        php: [ '8.1', '8.0', '7.4', '7.3', '7.2', '7.1', '7.0', '5.6', '5.5', '5.4' ]
-        DB: [ 'pdo/mysql', 'pdo/pgsql', 'pdo/sqlite', 'mysqli', 'pgsql', 'sqlite' ]
-=======
         php: [ '8.3', '8.2','8.0']
         DB: [ 'pdo/mysql', 'pdo/pgsql', 'mysqli', 'pgsql', ]
->>>>>>> 73027f3cf (Merge pull request #1 from cloudbeds/chore/php8.2)
         compiler: [ default ]
         include:
           - php: '8.2'
