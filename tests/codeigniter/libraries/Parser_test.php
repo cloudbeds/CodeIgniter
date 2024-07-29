@@ -2,6 +2,8 @@
 
 class Parser_test extends CI_TestCase {
 
+	public $parser;
+	
 	public function set_up()
 	{
 		$this->parser = new CI_Parser();

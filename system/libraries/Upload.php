@@ -49,6 +49,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  */
 class CI_Upload {
 
+	public $file_path;
+	public $full_path;
+	public $raw_name;
+
 	/**
 	 * Maximum file size
 	 *

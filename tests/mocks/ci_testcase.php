@@ -9,6 +9,8 @@ class CI_TestCase extends \PHPUnit\Framework\TestCase {
 	protected $ci_instance;
 	protected static $ci_test_instance;
 
+	public $ci_view_root;
+
 	private $global_map = array(
 		'benchmark'	=> 'bm',
 		'config'	=> 'cfg',
