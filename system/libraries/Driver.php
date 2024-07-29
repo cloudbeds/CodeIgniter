@@ -54,6 +54,8 @@ class CI_Driver_Library {
 
 	public $basic;
 	public $lowpack;
+	public $extend;
+
 	/**
 	 * Array of drivers that are available to use with the driver class
 	 *

@@ -2,6 +2,8 @@
 
 class Model_test extends CI_TestCase {
 
+	public $load;
+	
 	private $ci_obj;
 
 	public function set_up()

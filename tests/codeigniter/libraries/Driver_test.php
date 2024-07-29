@@ -7,6 +7,10 @@ class Driver_test extends CI_TestCase {
 
 	private $name;
 
+	public $subclass;
+	public $name;
+	public $lib;
+	
 	/**
 	 * Set up test framework
 	 */
