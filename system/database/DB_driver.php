@@ -55,6 +55,8 @@ abstract class CI_DB_driver {
 
 	public $stricton;
 	
+	public $autoinit;
+	
 	/**
 	 * Data Source Name / Connect string
 	 *
