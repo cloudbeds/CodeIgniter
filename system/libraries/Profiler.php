@@ -87,6 +87,17 @@ class CI_Profiler {
 	 */
 	protected $CI;
 
+	protected $_compile_benchmarks;
+	protected $_compile_get;
+	protected $_compile_memory_usage;
+	protected $_compile_post;
+	protected $_compile_uri_string;
+	protected $_compile_controller_info;
+	protected $_compile_queries;
+	protected $_compile_http_headers;
+	protected $_compile_session_data;
+	protected $_compile_config;
+	
 	// --------------------------------------------------------------------
 
 	/**
