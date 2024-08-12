@@ -358,6 +358,7 @@ abstract class CI_DB_driver {
 	 */
 	protected $_count_string = 'SELECT COUNT(*) AS ';
 
+	public $wait_timeout;
 	// --------------------------------------------------------------------
 
 	/**
