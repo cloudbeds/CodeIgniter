@@ -289,6 +289,8 @@ class CI_Image_lib {
 	 */
 	public $dest_folder		= '';
 
+	public $dest_image      = '';
+	
 	/**
 	 * Image mime-type
 	 *
